@@ -1,0 +1,2 @@
+# ZemogaSocialApp
+Technical test
