@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07AFB5632440C78F0001EFA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFB5622440C78F0001EFA0 /* AppDelegate.swift */; };
+		07AFB5652440C78F0001EFA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFB5642440C78F0001EFA0 /* SceneDelegate.swift */; };
+		07AFB5672440C78F0001EFA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFB5662440C78F0001EFA0 /* ContentView.swift */; };
+		07AFB5692440C7930001EFA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AFB5682440C7930001EFA0 /* Assets.xcassets */; };
+		07AFB56C2440C7930001EFA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AFB56B2440C7930001EFA0 /* Preview Assets.xcassets */; };
+		07AFB56F2440C7930001EFA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AFB56D2440C7930001EFA0 /* LaunchScreen.storyboard */; };
+		07AFB57A2440C7940001EFA0 /* ZemogaSocialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFB5792440C7940001EFA0 /* ZemogaSocialAppTests.swift */; };
+		87FFE0A025295A8F4837327F /* Pods_ZemogaSocialAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F46359FBF58F720E40D54CE /* Pods_ZemogaSocialAppTests.framework */; };
+		AFA1F351DF30C1D8BFEBDDEF /* Pods_ZemogaSocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F71F220FDF286AF0BC6F5 /* Pods_ZemogaSocialApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07AFB5762440C7940001EFA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AFB5572440C78F0001EFA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AFB55E2440C78F0001EFA0;
+			remoteInfo = ZemogaSocialApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07AFB55F2440C78F0001EFA0 /* ZemogaSocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZemogaSocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AFB5622440C78F0001EFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07AFB5642440C78F0001EFA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		07AFB5662440C78F0001EFA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07AFB5682440C7930001EFA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07AFB56B2440C7930001EFA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07AFB56E2440C7930001EFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07AFB5702440C7930001EFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AFB5752440C7940001EFA0 /* ZemogaSocialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZemogaSocialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AFB5792440C7940001EFA0 /* ZemogaSocialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaSocialAppTests.swift; sourceTree = "<group>"; };
+		07AFB57B2440C7940001EFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F46359FBF58F720E40D54CE /* Pods_ZemogaSocialAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZemogaSocialAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		196F71F220FDF286AF0BC6F5 /* Pods_ZemogaSocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZemogaSocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABA5BE6BEE050DC2B701338 /* Pods-ZemogaSocialAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaSocialAppTests.release.xcconfig"; path = "Target Support Files/Pods-ZemogaSocialAppTests/Pods-ZemogaSocialAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5EC003481194F5713F0938D8 /* Pods-ZemogaSocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaSocialApp.debug.xcconfig"; path = "Target Support Files/Pods-ZemogaSocialApp/Pods-ZemogaSocialApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C4DE9265A698B24BDF1A3ADE /* Pods-ZemogaSocialAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaSocialAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ZemogaSocialAppTests/Pods-ZemogaSocialAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F71A10C610F0C4933FE0997B /* Pods-ZemogaSocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaSocialApp.release.xcconfig"; path = "Target Support Files/Pods-ZemogaSocialApp/Pods-ZemogaSocialApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07AFB55C2440C78F0001EFA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA1F351DF30C1D8BFEBDDEF /* Pods_ZemogaSocialApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AFB5722440C7940001EFA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87FFE0A025295A8F4837327F /* Pods_ZemogaSocialAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07AFB5562440C78F0001EFA0 = {
+			isa = PBXGroup;
+			children = (
+				07AFB5612440C78F0001EFA0 /* ZemogaSocialApp */,
+				07AFB5782440C7940001EFA0 /* ZemogaSocialAppTests */,
+				07AFB5602440C78F0001EFA0 /* Products */,
+				2CAF39FF69916C6CF2481CD0 /* Pods */,
+				88C0529CBBE6425FED7BC58A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07AFB5602440C78F0001EFA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AFB55F2440C78F0001EFA0 /* ZemogaSocialApp.app */,
+				07AFB5752440C7940001EFA0 /* ZemogaSocialAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07AFB5612440C78F0001EFA0 /* ZemogaSocialApp */ = {
+			isa = PBXGroup;
+			children = (
+				07AFB5622440C78F0001EFA0 /* AppDelegate.swift */,
+				07AFB5642440C78F0001EFA0 /* SceneDelegate.swift */,
+				07AFB5662440C78F0001EFA0 /* ContentView.swift */,
+				07AFB5682440C7930001EFA0 /* Assets.xcassets */,
+				07AFB56D2440C7930001EFA0 /* LaunchScreen.storyboard */,
+				07AFB5702440C7930001EFA0 /* Info.plist */,
+				07AFB56A2440C7930001EFA0 /* Preview Content */,
+			);
+			path = ZemogaSocialApp;
+			sourceTree = "<group>";
+		};
+		07AFB56A2440C7930001EFA0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				07AFB56B2440C7930001EFA0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07AFB5782440C7940001EFA0 /* ZemogaSocialAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AFB5792440C7940001EFA0 /* ZemogaSocialAppTests.swift */,
+				07AFB57B2440C7940001EFA0 /* Info.plist */,
+			);
+			path = ZemogaSocialAppTests;
+			sourceTree = "<group>";
+		};
+		2CAF39FF69916C6CF2481CD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EC003481194F5713F0938D8 /* Pods-ZemogaSocialApp.debug.xcconfig */,
+				F71A10C610F0C4933FE0997B /* Pods-ZemogaSocialApp.release.xcconfig */,
+				C4DE9265A698B24BDF1A3ADE /* Pods-ZemogaSocialAppTests.debug.xcconfig */,
+				5ABA5BE6BEE050DC2B701338 /* Pods-ZemogaSocialAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		88C0529CBBE6425FED7BC58A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				196F71F220FDF286AF0BC6F5 /* Pods_ZemogaSocialApp.framework */,
+				0F46359FBF58F720E40D54CE /* Pods_ZemogaSocialAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07AFB55E2440C78F0001EFA0 /* ZemogaSocialApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AFB57E2440C7940001EFA0 /* Build configuration list for PBXNativeTarget "ZemogaSocialApp" */;
+			buildPhases = (
+				773C4E7406F8A220E6F8AD64 /* [CP] Check Pods Manifest.lock */,
+				07AFB55B2440C78F0001EFA0 /* Sources */,
+				07AFB55C2440C78F0001EFA0 /* Frameworks */,
+				07AFB55D2440C78F0001EFA0 /* Resources */,
+				AC585662E7C7B01C5F7D70C9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZemogaSocialApp;
+			productName = ZemogaSocialApp;
+			productReference = 07AFB55F2440C78F0001EFA0 /* ZemogaSocialApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07AFB5742440C7940001EFA0 /* ZemogaSocialAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AFB5812440C7940001EFA0 /* Build configuration list for PBXNativeTarget "ZemogaSocialAppTests" */;
+			buildPhases = (
+				F5C59BBDB247B84CA0EE275A /* [CP] Check Pods Manifest.lock */,
+				07AFB5712440C7940001EFA0 /* Sources */,
+				07AFB5722440C7940001EFA0 /* Frameworks */,
+				07AFB5732440C7940001EFA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07AFB5772440C7940001EFA0 /* PBXTargetDependency */,
+			);
+			name = ZemogaSocialAppTests;
+			productName = ZemogaSocialAppTests;
+			productReference = 07AFB5752440C7940001EFA0 /* ZemogaSocialAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07AFB5572440C78F0001EFA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Lramirez;
+				TargetAttributes = {
+					07AFB55E2440C78F0001EFA0 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					07AFB5742440C7940001EFA0 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 07AFB55E2440C78F0001EFA0;
+					};
+				};
+			};
+			buildConfigurationList = 07AFB55A2440C78F0001EFA0 /* Build configuration list for PBXProject "ZemogaSocialApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07AFB5562440C78F0001EFA0;
+			productRefGroup = 07AFB5602440C78F0001EFA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07AFB55E2440C78F0001EFA0 /* ZemogaSocialApp */,
+				07AFB5742440C7940001EFA0 /* ZemogaSocialAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07AFB55D2440C78F0001EFA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AFB56F2440C7930001EFA0 /* LaunchScreen.storyboard in Resources */,
+				07AFB56C2440C7930001EFA0 /* Preview Assets.xcassets in Resources */,
+				07AFB5692440C7930001EFA0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AFB5732440C7940001EFA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		773C4E7406F8A220E6F8AD64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZemogaSocialApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC585662E7C7B01C5F7D70C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZemogaSocialApp/Pods-ZemogaSocialApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZemogaSocialApp/Pods-ZemogaSocialApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZemogaSocialApp/Pods-ZemogaSocialApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C59BBDB247B84CA0EE275A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZemogaSocialAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07AFB55B2440C78F0001EFA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AFB5632440C78F0001EFA0 /* AppDelegate.swift in Sources */,
+				07AFB5652440C78F0001EFA0 /* SceneDelegate.swift in Sources */,
+				07AFB5672440C78F0001EFA0 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AFB5712440C7940001EFA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AFB57A2440C7940001EFA0 /* ZemogaSocialAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07AFB5772440C7940001EFA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AFB55E2440C78F0001EFA0 /* ZemogaSocialApp */;
+			targetProxy = 07AFB5762440C7940001EFA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07AFB56D2440C7930001EFA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AFB56E2440C7930001EFA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07AFB57C2440C7940001EFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07AFB57D2440C7940001EFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07AFB57F2440C7940001EFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC003481194F5713F0938D8 /* Pods-ZemogaSocialApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ZemogaSocialApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Y2NMD7UXB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZemogaSocialApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lramirezsuarez.ZemogaSocialApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07AFB5802440C7940001EFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71A10C610F0C4933FE0997B /* Pods-ZemogaSocialApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ZemogaSocialApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Y2NMD7UXB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZemogaSocialApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lramirezsuarez.ZemogaSocialApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07AFB5822440C7940001EFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4DE9265A698B24BDF1A3ADE /* Pods-ZemogaSocialAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2NMD7UXB;
+				INFOPLIST_FILE = ZemogaSocialAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lramirezsuarez.ZemogaSocialAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZemogaSocialApp.app/ZemogaSocialApp";
+			};
+			name = Debug;
+		};
+		07AFB5832440C7940001EFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ABA5BE6BEE050DC2B701338 /* Pods-ZemogaSocialAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2NMD7UXB;
+				INFOPLIST_FILE = ZemogaSocialAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lramirezsuarez.ZemogaSocialAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZemogaSocialApp.app/ZemogaSocialApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07AFB55A2440C78F0001EFA0 /* Build configuration list for PBXProject "ZemogaSocialApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AFB57C2440C7940001EFA0 /* Debug */,
+				07AFB57D2440C7940001EFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AFB57E2440C7940001EFA0 /* Build configuration list for PBXNativeTarget "ZemogaSocialApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AFB57F2440C7940001EFA0 /* Debug */,
+				07AFB5802440C7940001EFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AFB5812440C7940001EFA0 /* Build configuration list for PBXNativeTarget "ZemogaSocialAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AFB5822440C7940001EFA0 /* Debug */,
+				07AFB5832440C7940001EFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07AFB5572440C78F0001EFA0 /* Project object */;
+}

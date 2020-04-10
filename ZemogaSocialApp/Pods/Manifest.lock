@@ -1,0 +1,26 @@
+PODS:
+  - ActivityIndicatorView (0.0.1)
+  - Realm (4.4.0):
+    - Realm/Headers (= 4.4.0)
+  - Realm/Headers (4.4.0)
+  - RealmSwift (4.4.0):
+    - Realm (= 4.4.0)
+
+DEPENDENCIES:
+  - ActivityIndicatorView
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - ActivityIndicatorView
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  ActivityIndicatorView: a97c38d97239a82a7a6e62f9ba61b2fc430b96f9
+  Realm: e125f464884cda953ebefe70c671b75b03b81b9b
+  RealmSwift: 33656a42bd300959a081fc13347376bc478071af
+
+PODFILE CHECKSUM: ebe6fb2fe7f5576caae3e3b97b759e6406d10c33
+
+COCOAPODS: 1.9.1
