@@ -3,13 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071353C624410C6100244378 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071353C524410C6100244378 /* Persistable.swift */; };
+		071353C824410C8600244378 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071353C724410C8600244378 /* Post.swift */; };
+		071353CB24410E2400244378 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071353CA24410E2400244378 /* Enviroment.swift */; };
+		071353CD24410E8000244378 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071353CC24410E8000244378 /* DataRequest.swift */; };
+		071353D1244112D600244378 /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071353D0244112D600244378 /* PostRow.swift */; };
+		076F62D424411FC200EE2536 /* List+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F62D324411FC200EE2536 /* List+Modifiers.swift */; };
+		076F62D6244131F500EE2536 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F62D5244131F500EE2536 /* PostsView.swift */; };
+		076F62D82441337600EE2536 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F62D72441337600EE2536 /* FavoritesView.swift */; };
 		07AFB5632440C78F0001EFA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFB5622440C78F0001EFA0 /* AppDelegate.swift */; };
 		07AFB5652440C78F0001EFA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFB5642440C78F0001EFA0 /* SceneDelegate.swift */; };
-		07AFB5672440C78F0001EFA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFB5662440C78F0001EFA0 /* ContentView.swift */; };
+		07AFB5672440C78F0001EFA0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AFB5662440C78F0001EFA0 /* HomeView.swift */; };
 		07AFB5692440C7930001EFA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AFB5682440C7930001EFA0 /* Assets.xcassets */; };
 		07AFB56C2440C7930001EFA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AFB56B2440C7930001EFA0 /* Preview Assets.xcassets */; };
 		07AFB56F2440C7930001EFA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AFB56D2440C7930001EFA0 /* LaunchScreen.storyboard */; };
@@ -29,10 +37,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071353C524410C6100244378 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		071353C724410C8600244378 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		071353CA24410E2400244378 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		071353CC24410E8000244378 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		071353D0244112D600244378 /* PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
+		076F62D324411FC200EE2536 /* List+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Modifiers.swift"; sourceTree = "<group>"; };
+		076F62D5244131F500EE2536 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		076F62D72441337600EE2536 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		07AFB55F2440C78F0001EFA0 /* ZemogaSocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZemogaSocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AFB5622440C78F0001EFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AFB5642440C78F0001EFA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07AFB5662440C78F0001EFA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07AFB5662440C78F0001EFA0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		07AFB5682440C7930001EFA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07AFB56B2440C7930001EFA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07AFB56E2440C7930001EFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +84,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071353C024410BB800244378 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				071353CC24410E8000244378 /* DataRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		071353C124410BC300244378 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				071353C724410C8600244378 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		071353C224410BCA00244378 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				076F62D92441376C00EE2536 /* PostDetailScene */,
+				071353CE244112A900244378 /* PostsScene */,
+				07AFB5662440C78F0001EFA0 /* HomeView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		071353C324410BD200244378 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				071353C524410C6100244378 /* Persistable.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		071353C424410BDD00244378 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				076F62D324411FC200EE2536 /* List+Modifiers.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		071353C924410E0B00244378 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				071353CA24410E2400244378 /* Enviroment.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		071353CE244112A900244378 /* PostsScene */ = {
+			isa = PBXGroup;
+			children = (
+				071353CF244112BC00244378 /* Row */,
+				076F62D5244131F500EE2536 /* PostsView.swift */,
+				076F62D72441337600EE2536 /* FavoritesView.swift */,
+			);
+			path = PostsScene;
+			sourceTree = "<group>";
+		};
+		071353CF244112BC00244378 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				071353D0244112D600244378 /* PostRow.swift */,
+			);
+			name = Row;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		076F62D92441376C00EE2536 /* PostDetailScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PostDetailScene;
+			sourceTree = "<group>";
+		};
 		07AFB5562440C78F0001EFA0 = {
 			isa = PBXGroup;
 			children = (
@@ -91,9 +183,14 @@
 		07AFB5612440C78F0001EFA0 /* ZemogaSocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				071353C224410BCA00244378 /* Scenes */,
+				071353C124410BC300244378 /* Models */,
+				071353C024410BB800244378 /* Network */,
+				071353C324410BD200244378 /* Persistence */,
+				071353C924410E0B00244378 /* Utils */,
+				071353C424410BDD00244378 /* Extension */,
 				07AFB5622440C78F0001EFA0 /* AppDelegate.swift */,
 				07AFB5642440C78F0001EFA0 /* SceneDelegate.swift */,
-				07AFB5662440C78F0001EFA0 /* ContentView.swift */,
 				07AFB5682440C7930001EFA0 /* Assets.xcassets */,
 				07AFB56D2440C7930001EFA0 /* LaunchScreen.storyboard */,
 				07AFB5702440C7930001EFA0 /* Info.plist */,
@@ -127,7 +224,6 @@
 				C4DE9265A698B24BDF1A3ADE /* Pods-ZemogaSocialAppTests.debug.xcconfig */,
 				5ABA5BE6BEE050DC2B701338 /* Pods-ZemogaSocialAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,9 +404,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076F62D82441337600EE2536 /* FavoritesView.swift in Sources */,
+				071353CD24410E8000244378 /* DataRequest.swift in Sources */,
 				07AFB5632440C78F0001EFA0 /* AppDelegate.swift in Sources */,
 				07AFB5652440C78F0001EFA0 /* SceneDelegate.swift in Sources */,
-				07AFB5672440C78F0001EFA0 /* ContentView.swift in Sources */,
+				076F62D424411FC200EE2536 /* List+Modifiers.swift in Sources */,
+				071353CB24410E2400244378 /* Enviroment.swift in Sources */,
+				071353C624410C6100244378 /* Persistable.swift in Sources */,
+				07AFB5672440C78F0001EFA0 /* HomeView.swift in Sources */,
+				071353D1244112D600244378 /* PostRow.swift in Sources */,
+				076F62D6244131F500EE2536 /* PostsView.swift in Sources */,
+				071353C824410C8600244378 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
