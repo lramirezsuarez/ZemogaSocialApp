@@ -23,7 +23,7 @@ struct DataRequest: DataRequestProtocol {
     static let postStore = PostStore()
     static let userStore = UserStore()
     static let commentStore = CommentStore()
-
+    
     static func getPosts(completion: @escaping (PostCallback)) {
         postStore.loadPostsFromRealm { realmPosts in
             if let posts = realmPosts, posts.count > 0 {
@@ -94,19 +94,19 @@ struct DataRequest: DataRequestProtocol {
 private extension DataRequest {
     static func loadPostsFromNetwork(completion: @escaping (PostCallback)) {
         let jsonDecoder = JSONDecoder()
-
+        
         guard let url = URL(string: Environment.prod.contentBaseURl + "posts"),
             let timeoutInterval = TimeInterval(exactly: 300) else {
-            preconditionFailure("Failed to construct URL")
+                preconditionFailure("Failed to construct URL")
         }
         
         let taskConfiguration = URLSessionConfiguration.default
         taskConfiguration.timeoutIntervalForRequest = timeoutInterval
-
+        
         let urlSession = URLSession(configuration: taskConfiguration)
         let task = urlSession.dataTask(with: url) {
             data, response, error in
-
+            
             DispatchQueue.main.async {
                 if let data = data {
                     let postsDecoded = try? jsonDecoder.decode([Post].self, from: data)
@@ -116,7 +116,7 @@ private extension DataRequest {
                 }
             }
         }
-
+        
         task.resume()
     }
     
@@ -127,19 +127,19 @@ private extension DataRequest {
     
     static func loadCommentsFromNetwork(from postId: Int, completion: @escaping (CommentCallback)) {
         let jsonDecoder = JSONDecoder()
-
+        
         guard let url = URL(string: Environment.prod.contentBaseURl + "posts/\(postId)/comments"),
             let timeoutInterval = TimeInterval(exactly: 300) else {
-            preconditionFailure("Failed to construct URL")
+                preconditionFailure("Failed to construct URL")
         }
         
         let taskConfiguration = URLSessionConfiguration.default
         taskConfiguration.timeoutIntervalForRequest = timeoutInterval
-
+        
         let urlSession = URLSession(configuration: taskConfiguration)
         let task = urlSession.dataTask(with: url) {
             data, response, error in
-
+            
             DispatchQueue.main.async {
                 if let data = data {
                     let commentsDecoded = try? jsonDecoder.decode([Comment].self, from: data)
@@ -149,7 +149,7 @@ private extension DataRequest {
                 }
             }
         }
-
+        
         task.resume()
     }
     
@@ -160,19 +160,19 @@ private extension DataRequest {
     
     static func loadUsersFromNetwork(_ id: Int, completion: @escaping (UserCallback)) {
         let jsonDecoder = JSONDecoder()
-
+        
         guard let url = URL(string: Environment.prod.contentBaseURl + "users?id=\(id)"),
             let timeoutInterval = TimeInterval(exactly: 300) else {
-            preconditionFailure("Failed to construct URL")
+                preconditionFailure("Failed to construct URL")
         }
         
         let taskConfiguration = URLSessionConfiguration.default
         taskConfiguration.timeoutIntervalForRequest = timeoutInterval
-
+        
         let urlSession = URLSession(configuration: taskConfiguration)
         let task = urlSession.dataTask(with: url) {
             data, response, error in
-
+            
             DispatchQueue.main.async {
                 if let data = data {
                     let usersDecoded = try? jsonDecoder.decode([User].self, from: data)
@@ -182,7 +182,7 @@ private extension DataRequest {
                 }
             }
         }
-
+        
         task.resume()
     }
     

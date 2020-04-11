@@ -12,7 +12,6 @@ import ActivityIndicatorView
 struct PostsView: View {
     @State private var isLoading = true
     @State var posts = [Post]()
-    let postStore = PostStore()
     
     var body: some View {
         ZStack {
@@ -39,7 +38,7 @@ struct PostsView: View {
                     }, label: {
                         Image(systemName: "arrow.clockwise")
                             .padding(.trailing, 12)
-                }))
+                    }))
                 
                 HStack(alignment: .center) {
                     Spacer()
@@ -76,7 +75,7 @@ struct PostsView: View {
             postsToDelete.append(posts[i].managedObject())
         }
         
-        postStore.delete(postsToDelete) { deleted in
+        DataRequest.postStore.delete(postsToDelete) { deleted in
             guard deleted else {
                 return
             }
@@ -85,7 +84,7 @@ struct PostsView: View {
     }
     
     func deleteAll() {
-        postStore.deleteAll { deleted in
+        DataRequest.postStore.deleteAll { deleted in
             self.posts.removeAll()
         }
     }

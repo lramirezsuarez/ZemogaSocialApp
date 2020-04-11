@@ -31,16 +31,16 @@ struct PostDetailView: View {
             self.markAsRead()
             self.isFavorite = self.post.isFavorite
         })
-        .listSeparatorStyleNone()
-        .listStyle(DefaultListStyle())
-        .navigationBarTitle(Text(post.title), displayMode: .inline)
-        .navigationBarItems(trailing: Button(action: {
-            self.markAsFavorite()
-        }, label: {
-            Image(systemName: self.isFavorite ? "star.fill" : "star")
-                .padding(.trailing, 12)
-                .foregroundColor(Color.yellow)
-        }))
+            .listSeparatorStyleNone()
+            .listStyle(DefaultListStyle())
+            .navigationBarTitle(Text(post.title.capitalized), displayMode: .inline)
+            .navigationBarItems(trailing: Button(action: {
+                self.markAsFavorite()
+            }, label: {
+                Image(systemName: self.isFavorite ? "star.fill" : "star")
+                    .padding(.trailing, 12)
+                    .foregroundColor(Color.yellow)
+            }))
     }
     
     func markAsRead() {

@@ -17,7 +17,7 @@ struct Post: Codable, Identifiable {
     let body: String
     var isFavorite: Bool = false
     var read: Bool = true
-
+    
     enum CodingKeys: String, CodingKey {
         case userID = "userId"
         case id, title, body

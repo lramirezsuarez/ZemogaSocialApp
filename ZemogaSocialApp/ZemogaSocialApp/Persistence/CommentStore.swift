@@ -36,7 +36,7 @@ final class CommentStore {
             print("Unexpected error")
         }
     }
-
+    
     public func retrieveComments(_ postId: Int) throws -> Results<CommentObject> {
         if realm != nil {
             return realm!.objects(CommentObject.self).filter("postId = %i", postId)

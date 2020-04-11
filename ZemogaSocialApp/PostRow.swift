@@ -26,7 +26,6 @@ struct PostRow: View {
                     .font(.body)
                     .multilineTextAlignment(.leading)
                 Spacer()
-                
             }
         }
     }
