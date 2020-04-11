@@ -12,18 +12,21 @@ import ActivityIndicatorView
 struct HomeView: View {
     @State private var posts = [Post]()
     @State private var isLoading = true
+    let postStore = PostStore()
     
     var body: some View {
         TabView {
-            PostsView()
-                .tabItem {
-                    Image(systemName: "list.dash")
-                    Text("All")
+            NavigationView {
+                PostsView()
+            }.tabItem {
+                Image(systemName: "list.dash")
+                Text("All")
             }
-            FavoritesView()
-                .tabItem {
-                    Image(systemName: "text.badge.star")
-                    Text("Favorites")
+            NavigationView {
+                FavoritesView()
+            }.tabItem {
+                Image(systemName: "text.badge.star")
+                Text("Favorites")
             }
         }
     }

@@ -24,7 +24,7 @@ struct Post: Codable, Identifiable {
     }
 }
 
-// MARK: - RealmUser
+// MARK: - RealmPost
 final class PostObject: Object {
     @objc dynamic var id = 0
     @objc dynamic var userID = 0
@@ -38,7 +38,7 @@ final class PostObject: Object {
     }
 }
 
-// MARK: - Persistance for the user
+// MARK: - Persistance for the post
 extension Post: Persistable {
     public init(managedObject: PostObject) {
         id = managedObject.id

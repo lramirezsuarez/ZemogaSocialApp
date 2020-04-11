@@ -18,16 +18,15 @@ struct PostRow: View {
                     Image(systemName: "circle.fill")
                         .foregroundColor(Color.blue)
                 }
-                Text(post.title.capitalized)
-                    .font(.body)
-                    .multilineTextAlignment(.leading)
-                Spacer()
                 if post.isFavorite {
                     Image(systemName: "star.fill")
                         .foregroundColor(Color.yellow)
                 }
-                Image(systemName: "chevron.right")
-                    .foregroundColor(Color.gray)
+                Text(post.title.capitalized)
+                    .font(.body)
+                    .multilineTextAlignment(.leading)
+                Spacer()
+                
             }
         }
     }

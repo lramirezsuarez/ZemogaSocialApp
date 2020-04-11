@@ -14,26 +14,24 @@ struct FavoritesView: View {
     @State private var posts = [Post]()
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                List {
-                    if self.posts.count > 0 {
-                        ForEach(self.posts) { post in
+        ZStack {
+            List {
+                if self.posts.count > 0 {
+                    ForEach(self.posts) { post in
+                        NavigationLink(destination: PostDetailView(post: post)) {
                             PostRow(post: post)
                         }
-                    } else if !self.isLoading && self.posts.count == 0 {
-                        Text("No posts to shows".uppercased())
-                            .font(.title)
-                            .multilineTextAlignment(.center)
                     }
+                } else if !self.isLoading && self.posts.count == 0 {
+                    Text("No posts to shows".uppercased())
+                        .font(.title)
+                        .multilineTextAlignment(.center)
                 }
-                .onAppear(perform: self.loadData)
-                .navigationBarTitle("Favorites Posts", displayMode: .large)
-                .listSeparatorStyleNone()
-                
-                ActivityIndicatorView(isVisible: $isLoading, type: .rotatingDots)
-                    .frame(width: 50.0, height: 50.0)
             }
+            .onAppear(perform: self.loadData)
+            .navigationBarTitle("Favorites Posts", displayMode: .large)
+            ActivityIndicatorView(isVisible: $isLoading, type: .rotatingDots)
+                .frame(width: 50.0, height: 50.0)
         }
     }
     
