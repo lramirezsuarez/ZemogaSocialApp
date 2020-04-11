@@ -20,10 +20,11 @@ protocol DataRequestProtocol {
 }
 
 struct DataRequest: DataRequestProtocol {
+    static let postStore = PostStore()
+    static let userStore = UserStore()
+    static let commentStore = CommentStore()
 
     static func getPosts(completion: @escaping (PostCallback)) {
-        let postStore = PostStore()
-        
         postStore.loadPostsFromRealm { realmPosts in
             if let posts = realmPosts, posts.count > 0 {
                 completion(posts)
@@ -42,7 +43,6 @@ struct DataRequest: DataRequestProtocol {
                         }
                         savePostsToRealm(posts: networkPosts)
                         completion(networkPosts)
-                        return
                     }
                 }
             }
@@ -50,27 +50,43 @@ struct DataRequest: DataRequestProtocol {
     }
     
     static func getComments(from postId: Int, completion: @escaping (CommentCallback)) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            loadCommentsFromNetwork(from: postId) { retrievedComments in
-                guard let networkComments = retrievedComments else {
-                    completion(nil)
-                    return
+        commentStore.loadCommentsFromRealm(with: postId) { realmComments in
+            if let comments = realmComments, comments.count > 0 {
+                completion(comments)
+            } else {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    loadCommentsFromNetwork(from: postId) { retrievedComments in
+                        guard let networkComments = retrievedComments else {
+                            completion(nil)
+                            return
+                        }
+                        saveCommentsToRealm(comments: networkComments)
+                        completion(networkComments)
+                    }
                 }
-                completion(networkComments)
             }
         }
+        
     }
     
     static func getUsers(_ id: Int, completion: @escaping (UserCallback)) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            loadUsersFromNetwork(id) { retrievedUsers in
-                guard let networkUsers = retrievedUsers else {
-                    completion(nil)
-                    return
+        userStore.loadUsersFromRealm(id) { realmUsers in
+            if let users = realmUsers, users.count > 0 {
+                completion(users)
+            } else {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    loadUsersFromNetwork(id) { retrievedUsers in
+                        guard let networkUsers = retrievedUsers else {
+                            completion(nil)
+                            return
+                        }
+                        saveUsersToRealm(users: networkUsers)
+                        completion(networkUsers)
+                    }
                 }
-                completion(networkUsers)
             }
         }
+        
     }
 }
 
@@ -105,7 +121,6 @@ private extension DataRequest {
     }
     
     static func savePostsToRealm(posts: [Post]) {
-        let postStore = PostStore()
         postStore.realm = try! Realm()
         postStore.savePosts(posts)
     }
@@ -138,6 +153,11 @@ private extension DataRequest {
         task.resume()
     }
     
+    static func saveCommentsToRealm(comments: [Comment]) {
+        commentStore.realm = try! Realm()
+        commentStore.saveComments(comments)
+    }
+    
     static func loadUsersFromNetwork(_ id: Int, completion: @escaping (UserCallback)) {
         let jsonDecoder = JSONDecoder()
 
@@ -164,6 +184,11 @@ private extension DataRequest {
         }
 
         task.resume()
+    }
+    
+    static func saveUsersToRealm(users: [User]) {
+        userStore.realm = try! Realm()
+        userStore.saveUsers(users)
     }
     
 }

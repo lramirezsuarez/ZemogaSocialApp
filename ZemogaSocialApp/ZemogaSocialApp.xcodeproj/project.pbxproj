@@ -20,6 +20,8 @@
 		0764614A244225D2001121F5 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07646149244225D2001121F5 /* UserRow.swift */; };
 		0764614D244233C8001121F5 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764614C244233C8001121F5 /* CommentView.swift */; };
 		0764614F24423707001121F5 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764614E24423707001121F5 /* PostStore.swift */; };
+		0764615324426596001121F5 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764615224426596001121F5 /* UserStore.swift */; };
+		07646155244267CE001121F5 /* CommentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07646154244267CE001121F5 /* CommentStore.swift */; };
 		076F62D424411FC200EE2536 /* List+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F62D324411FC200EE2536 /* List+Modifiers.swift */; };
 		076F62D6244131F500EE2536 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F62D5244131F500EE2536 /* PostsView.swift */; };
 		076F62D82441337600EE2536 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F62D72441337600EE2536 /* FavoritesView.swift */; };
@@ -58,6 +60,8 @@
 		07646149244225D2001121F5 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		0764614C244233C8001121F5 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		0764614E24423707001121F5 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
+		0764615224426596001121F5 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		07646154244267CE001121F5 /* CommentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentStore.swift; sourceTree = "<group>"; };
 		076F62D324411FC200EE2536 /* List+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Modifiers.swift"; sourceTree = "<group>"; };
 		076F62D5244131F500EE2536 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		076F62D72441337600EE2536 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 			children = (
 				071353C524410C6100244378 /* Persistable.swift */,
 				0764614E24423707001121F5 /* PostStore.swift */,
+				0764615224426596001121F5 /* UserStore.swift */,
+				07646154244267CE001121F5 /* CommentStore.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -466,11 +472,13 @@
 				071353CD24410E8000244378 /* DataRequest.swift in Sources */,
 				07AFB5632440C78F0001EFA0 /* AppDelegate.swift in Sources */,
 				07AFB5652440C78F0001EFA0 /* SceneDelegate.swift in Sources */,
+				0764615324426596001121F5 /* UserStore.swift in Sources */,
 				07646145244211D0001121F5 /* User.swift in Sources */,
 				076F62D424411FC200EE2536 /* List+Modifiers.swift in Sources */,
 				071353CB24410E2400244378 /* Enviroment.swift in Sources */,
 				071353C624410C6100244378 /* Persistable.swift in Sources */,
 				0764614324420D8A001121F5 /* UserView.swift in Sources */,
+				07646155244267CE001121F5 /* CommentStore.swift in Sources */,
 				0764613B244204FD001121F5 /* Comment.swift in Sources */,
 				0764613D24420741001121F5 /* PostDetailView.swift in Sources */,
 				07AFB5672440C78F0001EFA0 /* HomeView.swift in Sources */,

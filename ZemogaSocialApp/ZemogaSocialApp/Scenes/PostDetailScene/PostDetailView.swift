@@ -12,7 +12,6 @@ import ActivityIndicatorView
 struct PostDetailView: View {
     @State private var isFavorite = false
     var post: Post
-    let postStore = PostStore()
     
     var body: some View {
         List {
@@ -45,12 +44,12 @@ struct PostDetailView: View {
     }
     
     func markAsRead() {
-        postStore.markAsRead(post.managedObject())
+        DataRequest.postStore.markAsRead(post.managedObject())
     }
     
     func markAsFavorite() {
         self.isFavorite = !self.post.isFavorite
-        postStore.setFavorite(post.managedObject(), isFavorite: self.isFavorite)
+        DataRequest.postStore.setFavorite(post.managedObject(), isFavorite: self.isFavorite)
     }
     
 }
