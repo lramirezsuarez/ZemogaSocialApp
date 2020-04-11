@@ -14,10 +14,10 @@ struct CommentRow: View {
     var body: some View {
         VStack {
             HStack {
-                Text("\(comment.name) - \(comment.email)").font(.headline)
+                Text("\(comment.name.capitalized) - \(comment.email)").font(.headline)
                 Spacer()
             }
-            Text(comment.body).multilineTextAlignment(.leading).font(.body)
+            Text(comment.body.capitalized).multilineTextAlignment(.leading).font(.body)
             Spacer()
         }
     }

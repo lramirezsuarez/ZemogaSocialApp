@@ -16,7 +16,7 @@ struct PostDetailView: View {
     var body: some View {
         List {
             Section(header: Text("Content")) {
-                Text(post.body).font(.body).multilineTextAlignment(.leading)
+                Text(post.body.capitalized).font(.body).multilineTextAlignment(.leading)
             }
             
             Section(header: Text("User")) {

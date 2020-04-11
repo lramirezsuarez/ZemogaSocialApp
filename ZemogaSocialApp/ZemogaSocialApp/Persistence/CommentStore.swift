@@ -18,7 +18,7 @@ final class CommentStore {
                 realm!.add(comment)
             }
         } else {
-            RuntimeError.NoRealmSet
+            throw RuntimeError.NoRealmSet
         }
         
     }
@@ -45,6 +45,14 @@ final class CommentStore {
         }
     }
     
+    public func retrieveComments() throws -> Results<CommentObject> {
+        if realm != nil {
+            return realm!.objects(CommentObject.self)
+        } else {
+            throw RuntimeError.NoRealmSet
+        }
+    }
+    
     public func loadCommentsFromRealm(with postId: Int, completion: @escaping CommentCallback) {
         realm = try! Realm()
         
@@ -56,5 +64,14 @@ final class CommentStore {
         let comments = Array(realmComments).map { Comment(managedObject: $0) }
         
         completion(comments)
+    }
+    
+    func deleteAll(completion: @escaping (DeleteHandler)) {
+        realm = try! Realm()
+        
+        try! realm!.write {
+            realm!.delete(realm!.objects(CommentObject.self))
+        }
+        completion(true)
     }
 }

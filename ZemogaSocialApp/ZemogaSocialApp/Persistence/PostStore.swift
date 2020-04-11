@@ -24,7 +24,7 @@ final class PostStore {
                 realm!.add(post)
             }
         } else {
-            RuntimeError.NoRealmSet
+            throw RuntimeError.NoRealmSet
         }
         
     }

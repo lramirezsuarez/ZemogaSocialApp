@@ -22,6 +22,9 @@
 		0764614F24423707001121F5 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764614E24423707001121F5 /* PostStore.swift */; };
 		0764615324426596001121F5 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764615224426596001121F5 /* UserStore.swift */; };
 		07646155244267CE001121F5 /* CommentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07646154244267CE001121F5 /* CommentStore.swift */; };
+		0764615724426CA7001121F5 /* UserStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764615624426CA7001121F5 /* UserStoreTest.swift */; };
+		0764615924427196001121F5 /* PostStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764615824427196001121F5 /* PostStoreTest.swift */; };
+		0764615D24427785001121F5 /* CommentStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764615C24427785001121F5 /* CommentStoreTest.swift */; };
 		076F62D424411FC200EE2536 /* List+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F62D324411FC200EE2536 /* List+Modifiers.swift */; };
 		076F62D6244131F500EE2536 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F62D5244131F500EE2536 /* PostsView.swift */; };
 		076F62D82441337600EE2536 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F62D72441337600EE2536 /* FavoritesView.swift */; };
@@ -62,6 +65,9 @@
 		0764614E24423707001121F5 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
 		0764615224426596001121F5 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		07646154244267CE001121F5 /* CommentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentStore.swift; sourceTree = "<group>"; };
+		0764615624426CA7001121F5 /* UserStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStoreTest.swift; sourceTree = "<group>"; };
+		0764615824427196001121F5 /* PostStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStoreTest.swift; sourceTree = "<group>"; };
+		0764615C24427785001121F5 /* CommentStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentStoreTest.swift; sourceTree = "<group>"; };
 		076F62D324411FC200EE2536 /* List+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Modifiers.swift"; sourceTree = "<group>"; };
 		076F62D5244131F500EE2536 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		076F62D72441337600EE2536 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
@@ -135,10 +141,10 @@
 		071353C324410BD200244378 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				07646154244267CE001121F5 /* CommentStore.swift */,
 				071353C524410C6100244378 /* Persistable.swift */,
 				0764614E24423707001121F5 /* PostStore.swift */,
 				0764615224426596001121F5 /* UserStore.swift */,
-				07646154244267CE001121F5 /* CommentStore.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -212,6 +218,23 @@
 			path = CommentView;
 			sourceTree = "<group>";
 		};
+		0764615A244272BC001121F5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0764615B244272C2001121F5 /* PersistenceTests */ = {
+			isa = PBXGroup;
+			children = (
+				0764615C24427785001121F5 /* CommentStoreTest.swift */,
+				0764615824427196001121F5 /* PostStoreTest.swift */,
+				0764615624426CA7001121F5 /* UserStoreTest.swift */,
+			);
+			path = PersistenceTests;
+			sourceTree = "<group>";
+		};
 		076F62D92441376C00EE2536 /* PostDetailScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +295,8 @@
 		07AFB5782440C7940001EFA0 /* ZemogaSocialAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				0764615B244272C2001121F5 /* PersistenceTests */,
+				0764615A244272BC001121F5 /* Mocks */,
 				07AFB5792440C7940001EFA0 /* ZemogaSocialAppTests.swift */,
 				07AFB57B2440C7940001EFA0 /* Info.plist */,
 			);
@@ -494,6 +519,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0764615724426CA7001121F5 /* UserStoreTest.swift in Sources */,
+				0764615D24427785001121F5 /* CommentStoreTest.swift in Sources */,
+				0764615924427196001121F5 /* PostStoreTest.swift in Sources */,
 				07AFB57A2440C7940001EFA0 /* ZemogaSocialAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

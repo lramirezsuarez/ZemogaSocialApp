@@ -27,8 +27,12 @@ struct CommentView: View {
                         .multilineTextAlignment(.center)
                 }
             }.onAppear(perform: self.loadComments)
-            ActivityIndicatorView(isVisible: $isLoadingComments, type: .rotatingDots)
-                .frame(width: 50.0, height: 50.0)
+            HStack {
+                Spacer()
+                ActivityIndicatorView(isVisible: $isLoadingComments, type: .rotatingDots)
+                    .frame(width: 50.0, height: 50.0)
+                Spacer()
+            }
         }
     }
     

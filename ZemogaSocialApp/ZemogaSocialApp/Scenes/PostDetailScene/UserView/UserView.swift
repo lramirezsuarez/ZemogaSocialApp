@@ -27,8 +27,12 @@ struct UserView: View {
                         .multilineTextAlignment(.center)
                 }
             }.onAppear(perform: self.loadUsers)
-            ActivityIndicatorView(isVisible: $isLoadingUser, type: .rotatingDots)
-                .frame(width: 50.0, height: 50.0)
+            HStack {
+                Spacer()
+                ActivityIndicatorView(isVisible: $isLoadingUser, type: .rotatingDots)
+                    .frame(width: 50.0, height: 50.0)
+                Spacer()
+            }
         }
         
     }

@@ -18,7 +18,7 @@ final class UserStore {
                 realm!.add(user)
             }
         } else {
-            RuntimeError.NoRealmSet
+            throw RuntimeError.NoRealmSet
         }
         
     }
@@ -45,6 +45,14 @@ final class UserStore {
         }
     }
     
+    public func retrieveUsers() throws -> Results<UserObject> {
+        if realm != nil {
+            return realm!.objects(UserObject.self)
+        } else {
+            throw RuntimeError.NoRealmSet
+        }
+    }
+    
     public func loadUsersFromRealm(_ id: Int, completion: @escaping UserCallback) {
         realm = try! Realm()
         
@@ -56,5 +64,14 @@ final class UserStore {
         let users = Array(realmUsers).map { User(managedObject: $0) }
         
         completion(users)
+    }
+    
+    func deleteAll(completion: @escaping (DeleteHandler)) {
+        realm = try! Realm()
+        
+        try! realm!.write {
+            realm!.delete(realm!.objects(UserObject.self))
+        }
+        completion(true)
     }
 }

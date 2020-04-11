@@ -14,7 +14,7 @@ struct UserRow: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text("\(user.name) - @\(user.username)")
+                Text("\(user.name.capitalized) - @\(user.username)")
                 Spacer()
             }
             HStack {
