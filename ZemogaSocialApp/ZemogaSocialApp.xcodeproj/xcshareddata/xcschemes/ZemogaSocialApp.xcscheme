@@ -39,6 +39,17 @@
                ReferencedContainer = "container:ZemogaSocialApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2E1A39C22D3FF83000478D01"
+               BuildableName = "ZemogaSocialAppUITests.xctest"
+               BlueprintName = "ZemogaSocialAppUITests"
+               ReferencedContainer = "container:ZemogaSocialApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
